@@ -1,0 +1,4 @@
+node_modules/
+configServer.js
+.vscode
+.DS_Store
