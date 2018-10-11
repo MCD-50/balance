@@ -59,7 +59,6 @@ export const _createTransaction = async (app, job, done) => {
 	}
 
 	const transactionLength = transactions.count;
-	console.log("*************************", transactionLength);
 
 	// map transactions and allow only greater head transactions only
 	const redisKey = payload.currencyType == currencyType.ETHER ? constant.REDIS_TRANSACTION_HEAD_ETH : constant.REDIS_TRANSACTION_HEAD_ERC;
